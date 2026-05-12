@@ -1,0 +1,4 @@
+SELECT 
+  COUNT (*) FILTER (WHERE device_type='laptop') AS Laptop_views, -- cuenta todas las filas con filtro 
+  COUNT (*) FILTER (WHERE device_type IN ('phone','tablet')) AS phone_views
+FROM viewership 
